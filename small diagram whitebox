@@ -1,0 +1,15 @@
+          ┌────────────────────────────┐
+          │        SOURCE CODE          │
+          └──────────────┬─────────────┘
+                         │
+             Analyze internal logic
+                         │
+       ┌─────────────────┼──────────────────┐
+       │                 │                  │
+Control Flow       Data Flow         Code Structure
+       │                 │                  │
+       └─────────────────┼──────────────────┘
+                         │
+                Design Test Cases
+                         │
+                  Execute & Verify

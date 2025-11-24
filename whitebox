@@ -1,0 +1,48 @@
+                        White Box Testing Examples
+
+White box testing, also known as clear box testing or glass box testing, is a software testing technique where the tester has knowledge of the internal workings of the software, including its code and architecture.
+
+Example 1: Testing a Simple Calculator
+Suppose we have a simple calculator program that performs addition, subtraction, multiplication, and division. We want to test the addition function.
+public int add(int a, int b) {
+  return a + b;
+}
+White box testing would involve testing the following scenarios:
+ Test if the function returns the correct result for positive numbers (e.g., 2 + 3 = 5)
+ Test if the function returns the correct result for negative numbers (e.g., -2 + (-3) = -5)
+ Test if the function returns the correct result for zero (e.g., 0 + 0 = 0)
+ Test if the function handles integer overflow (e.g., Integer.MAX_VALUE + 1)
+
+
+Example 2: Testing a Login System
+Suppose we have a login system that checks the username and password.
+public boolean login(String username, String password) {
+  if (username.equals("admin") && password.equals("password")) {
+    return true;
+  } else {
+    return false;
+  }
+}
+White box testing would involve testing the following scenarios:
+ Test if the function returns true for the correct username and password
+ Test if the function returns false for an incorrect username
+ Test if the function returns false for an incorrect password
+ Test if the function handles null or empty inputs
+
+Example 3: Testing a Bank Account System
+Suppose we have a bank account system that allows deposits and withdrawals.
+public void deposit(double amount) {
+  balance += amount;
+}
+public void withdraw(double amount) {
+  if (balance >= amount) {
+    balance -= amount;
+  } else {
+    throw new InsufficientFundsException();
+  }
+}
+White box testing would involve testing the following scenarios:
+ Test if the deposit function correctly updates the balance
+ Test if the withdraw function correctly updates the balance
+ Test if the withdraw function throws an exception for insufficient funds
+ Test if the functions handle negative or zero amounts

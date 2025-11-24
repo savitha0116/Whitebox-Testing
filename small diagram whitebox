@@ -1,5 +1,6 @@
+                          small diagram whitebox
           ┌────────────────────────────┐
-          │        SOURCE CODE          │
+          │        SOURCE CODE         │
           └──────────────┬─────────────┘
                          │
              Analyze internal logic
@@ -13,3 +14,20 @@ Control Flow       Data Flow         Code Structure
                 Design Test Cases
                          │
                   Execute & Verify
+
+
+
+              White Box Testing Table
+
+
+| **Aspect**            | **Description**                                                                                |
+| --------------------- | ---------------------------------------------------------------------------------------------- |
+| **Definition**        | Testing the internal structure, logic, and code of an application.                             |
+| **Tester View**       | Tester knows the internal code and logic (“white box”).                                        |
+| **Focus Areas**       | Condition statements, loops, branches, paths, code flow.                                       |
+| **Common Techniques** | • Statement Coverage  • Branch Coverage  • Path Coverage  • Loop Testing  • Condition Coverage |
+| **Used By**           | Developers, White-box testers                                                                  |
+| **Advantages**        | • Optimized code  • Early defect detection  • Ensures all logical paths are tested             |
+| **Disadvantages**     | • Requires coding knowledge  • Time-consuming  • Complex for large systems                     |
+| **Best For**          | Unit testing, component testing                                                                |
+

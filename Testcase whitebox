@@ -1,0 +1,51 @@
+                          2 Testcase demonstrating White Box Testing.
+
+Test Case 1: Testing a Simple Calculator
+public int calculate(int a, int b, String operation) {
+  if (operation.equals("add")) {
+    return a + b;
+  } else if (operation.equals("subtract")) {
+    return a - b;
+  } else {
+    throw new UnsupportedOperationException();
+  }
+}
+
+
+White Box Test Cases:
+
+1. Test if the function returns the correct result for addition
+    - Input: a = 2, b = 3, operation = "add"
+    - Expected Output: 5
+2. Test if the function returns the correct result for subtraction
+    - Input: a = 5, b = 3, operation = "subtract"
+    - Expected Output: 2
+3. Test if the function throws an exception for an unsupported operation
+    - Input: a = 2, b = 3, operation = "multiply"
+    - Expected Output: UnsupportedOperationException
+
+
+
+Test Case 2: Testing a Bank Account System
+public void withdraw(double amount) {
+  if (amount > 0 && amount <= balance) {
+    balance -= amount;
+  } else if (amount <= 0) {
+    throw new InvalidAmountException();
+  } else {
+    throw new InsufficientFundsException();
+  }
+}
+
+
+White Box Test Cases:
+
+1. Test if the function correctly updates the balance for a valid withdrawal
+    - Input: amount = 100, balance = 1000
+    - Expected Output: balance = 900
+2. Test if the function throws an exception for an invalid amount (zero or negative)
+    - Input: amount = -100, balance = 1000
+    - Expected Output: InvalidAmountException
+3. Test if the function throws an exception for insufficient funds
+    - Input: amount = 1500, balance = 1000
+    - Expected Output: InsufficientFundsException
